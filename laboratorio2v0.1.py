@@ -14,7 +14,9 @@ while 1:
             with open(archivo) as archivo:  
                 print('El archivo ingresado se ha podido leer satisfactoriamente. ')
                 contenido = archivo.read()
-                print(contenido)
+                #print(contenido)
+                numero_caracteres = len(contenido)
+                print('Hay {} caracteres en el archivo de texto.\n'.format(numero_caracteres))
                 menu = input('\nDesea analizar otro archivo? (s/n)')
                 if menu== "n":
                     break                       
