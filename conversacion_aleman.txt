@@ -1,0 +1,21 @@
+Anna: Hallo! Lernst du Deutsch?
+Jenny: Ja, ich lerne hier Deutsch
+Anna: Ich komme aus England und du?
+Jenny: Ich komme aus Italien.
+Anna: Wie heisst du?
+Jenny: Ich heisse Anna, und du?
+Anna: Mein Name ist Jenny
+Jenny: Wie alt bist du?
+Anna: Ich bin 25 Jahre alt, und du?
+Jenny: 23
+Anna: Wie lange lernst du Deutsch?
+Jenny: Seir drei Jahre, und du?
+Anna: Ich habe erst dieses Jahr angefangen
+Jenny: Und warum lernst du Deutsch?
+Anna: Weil ich eine arbeit in Deutschland suchen
+Jenny: Ich lerne weil ich ein Deutschfreund haben
+Anna: Und welche Sprache sprichst du?
+Jenny: Ich spreche Italienisch und Englisch, und du?
+Anna: Ich spreche Englisch und ein bisschen Spanisch
+Also, Ich muss gehen. Tschüss
+Jenny: Bis bald
