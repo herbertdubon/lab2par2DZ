@@ -1,6 +1,8 @@
 
 import errno
 import os
+from tqdm import tqdm
+import time as time
 
 while 1:
     print('Seleccione una opcion para continuar: ')
@@ -12,6 +14,7 @@ while 1:
         archivo = input('\nIngrese el nombre del archivo: ')
         try:
             with open(archivo) as archivo:  
+                inicio = time.time()
                 print('El archivo ingresado se ha podido leer satisfactoriamente.\n')
                 contenido = archivo.read()
                 
@@ -31,15 +34,20 @@ while 1:
                 lineas = contenido.split()
                 nombres = []
                 nombres_unicos = []
-                for i in lineas:
+                for i in (lineas):
                     nombres.append(i)
-                for j in nombres:
+                for j in tqdm(nombres):
                     if j not in nombres_unicos:
                         nombres_unicos.append(j)
-                count = 0
-                for k in nombres_unicos:
-                    count += 1
-                print('Hay {} nombres unicos en el archivo de texto.'.format(count))                       
+                #count = 0
+                #for k in tqdm(nombres_unicos):
+                #    count += 1
+                print('Hay {} nombres unicos en el archivo de texto.'.format(len(nombres_unicos)))
+                #print('Hay {} nombres unicos en el archivo de texto.'.format(count))
+                
+                #Tiempo de ejecución programa
+                print('Duracion: {} segundos'.format(time.time() - inicio))                       
+                
                 menu = input('\nDesea analizar otro archivo? (s/n)')
                 if menu== "n":
                     break                       
