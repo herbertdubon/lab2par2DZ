@@ -12,11 +12,34 @@ while 1:
         archivo = input('\nIngrese el nombre del archivo: ')
         try:
             with open(archivo) as archivo:  
-                print('El archivo ingresado se ha podido leer satisfactoriamente. ')
+                print('El archivo ingresado se ha podido leer satisfactoriamente.\n')
                 contenido = archivo.read()
-                #print(contenido)
+                
+                #Numero de caracteres que hay en el archivo ingresado
                 numero_caracteres = len(contenido)
-                print('Hay {} caracteres en el archivo de texto.\n'.format(numero_caracteres))
+                print('Hay {} caracteres en el archivo de texto.'.format(numero_caracteres))
+                
+                #Numero de palabras que hay en el archivo ingresado
+                numero_palabras = contenido.split()
+                print('Hay {} palabras en el archivo de texto.'.format(len(numero_palabras)))
+                
+                #Numero de lineas que hay en el archivo
+                numero_lineas = len(contenido.splitlines())
+                print('Hay {} lineas en el archivo de texto.'.format(numero_lineas)) 
+                
+                #Numero de palabras unicas que hay en el archivo
+                lineas = contenido.split()
+                nombres = []
+                nombres_unicos = []
+                for i in lineas:
+                    nombres.append(i)
+                for j in nombres:
+                    if j not in nombres_unicos:
+                        nombres_unicos.append(j)
+                count = 0
+                for k in nombres_unicos:
+                    count += 1
+                print('Hay {} nombres unicos en el archivo de texto.'.format(count))                       
                 menu = input('\nDesea analizar otro archivo? (s/n)')
                 if menu== "n":
                     break                       
