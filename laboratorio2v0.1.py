@@ -8,7 +8,7 @@ def salir():
     sys.exit()
 
 #Se creo la función de menu con las opciones que el usuario puede elegir. Al final se le envia la opcion elegida 
-# a la función lectura. 
+# a la función lectura. El programa soporta la lectura de archivos json, txt, sin nombre de extensión y otros.  
 def menu():
     print("""
     Seleccione una opcion para continuar:
