@@ -3,6 +3,7 @@ import sys
 from tqdm import tqdm
 import time as time
 
+#Se creo función salir para cerrar el programa
 def salir():
     sys.exit()
 
