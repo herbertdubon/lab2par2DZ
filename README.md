@@ -78,7 +78,7 @@ def menu():
         """)
     opcion = int(input('\nCuál opcion desea realizar?\n'))
     lectura(opcion)
-    
+## Funcion de Lectura del archivo    
 #Se creo la función lectura a la cual se le pasa el parametro de la opcion elegida. Si es 1 procede a la lectura del
 #archivo y si es 2 se sale del programa. A la función resultados se le pasa el parametro del nombre_archivo digitado por el usuario. 
 def lectura(opcion):
@@ -107,6 +107,7 @@ def lectura(opcion):
         elif (opcion == "n"):
             salir()
 
+## Funcion de proceso de resultados
 #Se crea la fución resultados a la cual se le pasa el parametro del nombre del archivo y se procesan los 4 resultados solicitados.
 def resultados(nombre_archivo):
     while True:                   
