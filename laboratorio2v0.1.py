@@ -26,7 +26,6 @@ def lectura(opcion):
             if opcion == 1:      
                 nombre_archivo = input('\nIngrese el nombre del archivo: ')
                 resultados(nombre_archivo)
-                print('El nombre_archivo ingresado se ha podido leer satisfactoriamente.\n')
             else:
                 salir()
         
