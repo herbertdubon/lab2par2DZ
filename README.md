@@ -9,8 +9,8 @@ requerimientos.
 
 LABORATORIO 2:
 1. Mostrar en pantalla que el usuario tiene 2 opciones:
-• Especificar nombre de archivo y procesar su contenido
-• Salir del programa
+- Especificar nombre de archivo y procesar su contenido
+- Salir del programa
 2. Si el usuario elige la primera opción se debe capturar el nombre del archivo, informar al
 usuario que se pudo leer o no la entrada de datos; en caso que la fuente de datos no pudo
 leerse informar al usuario que vuelva a intentar y se regresa al menu de opciones principal.
@@ -30,11 +30,11 @@ ambiente de consola.
 en las sesiones de trabajo de la unidad 2.
 9. Para el seguimiento a su propuesta técnica deberá crear un repositorio denominado
 “lab2par2”+iniciales de sus apellidos (ejemplo: lab2par2FT; la estructura de éste debe ser:
-• Desarrollo1: contiene el codigo fuente y archivos de entrada de datos solicitados en el
+- Desarrollo1: contiene el codigo fuente y archivos de entrada de datos solicitados en el
 numeral 6.
-• Todo el repositorio junto con todo su contenido debe cumplir con el estándares de
+- Todo el repositorio junto con todo su contenido debe cumplir con el estándares de
 buenas prácticas desarrollados en las sesiones de trabajo de la unidad 2.
-• La última transacción en la rama y en el repositorio no debe exceder la fecha y hora
+- La última transacción en la rama y en el repositorio no debe exceder la fecha y hora
 límite de entrega de la presente guía de trabajo. En caso que no se siga esta indicación se
 asignará la calificación de 0.0 a todo el trabajo presentado.
 10. Elaborar un video con una duración igual o mayor a 5 minutos donde explique el
@@ -51,8 +51,8 @@ sistemas expertos.
 Expertos, en el link de la pestaña “octubre” denominado “repeticion lab2-parcial2” un
 archivo de texto con el nombre <APELLIDOS>_LAB2.TXT
 (FERNANDEZTAMAYO_LAB2.TXT), este archivo debe contener:
-• link de repositorio solicitado en esta guía de trabajo (el link debe apuntar a la rama
+- link de repositorio solicitado en esta guía de trabajo (el link debe apuntar a la rama
 master del repositorio)
-• link del video solicitado en el numeral 10
+- link del video solicitado en el numeral 10
 12. No se aceptarán entregas fuera de la fecha y hora estipulada, el medio de recepción es
 exclusivamente por medio del aula virtual de la Universidad Evangélica.
