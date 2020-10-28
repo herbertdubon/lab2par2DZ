@@ -30,23 +30,16 @@ def lectura(eleccion):
             if eleccion == 1:      
                 nombre_archivo = input('\nIngrese el nombre del archivo: ')
                 resultados(nombre_archivo)
-            else:
-                break
+            elif eleccion == 2:
+                salir()
+            
     except FileNotFoundError:
         print('El archivo no existe en la carpeta')
-        opcion = input('\nDesea analizar otro archivo? (s/n)')
-        if opcion == "s":
-            menu()                               
-        elif (opcion == "n"):
-            salir()
+        lectura(1)                               
             
     except ValueError:
         print('Opción digitada no válida')
-        opcion = input('\nDesea analizar otro archivo? (s/n)')
-        if opcion == "s":
-            menu()                               
-        elif (opcion == "n"):
-            salir()
+        lectura(1)
 
 def resultados(nombre_archivo):
     while True:
@@ -81,10 +74,10 @@ def resultados(nombre_archivo):
 
             #Consulta por si el usuario desea analizar otro archivo. 
             #Esta opción lo regresa al menu principal de
-            opcion = input('\nDesea analizar otro archivo? (s/n)')
-            if opcion == "s":
-                menu()                               
-            elif (opcion == "n"):
+            otroArchivo = input('\nDesea analizar otro archivo? (s/n)')
+            if otroArchivo == "s":
+                lectura(1)                              
+            elif (otroArchivo == "n"):
                 salir() 
     
 
