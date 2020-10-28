@@ -1,5 +1,6 @@
 # lab2par2DZ
 Laboratorio 2 Sistemas Expertos
+<<<<<<< HEAD
 ESCENARIO LABORATORIO:
 Una institución esta utilizando una serie de técnicas y herramientas de Inteligencia Artificial
 para el desarrollo de un traductor en tiempo real de conversaciones, actualmente se están
@@ -149,3 +150,11 @@ def resultados(nombre_archivo):
         elif (opcion == "n"):
             salir()            
 menu()  
+=======
+
+Este repositorio es para entrega la resolución del laboratorio y parcial 2 de Sistemas Expertos. 
+La rama desarrollo1 contiene todo el código y archivos solicitados en el laboratorio 2. 
+El link para acceder a la rama de desarrollo1 es:
+
+https://github.com/herbertdubon/lab2par2DZ/tree/desarrollo1
+>>>>>>> 702f145da61458e4e4f273da456d75d5d30f1722
