@@ -1,7 +1,7 @@
-
 import sys
 import time as time
 import numpy as np
+import menu
 
 #Se creo función salir para cerrar el programa
 def salir():
@@ -11,16 +11,14 @@ def salir():
 elegir. Al final se le envia la opcion elegida a la función lectura.
 El programa soporta la lectura de archivos json, txt, sin nombre de 
 extensión y otros.""" 
-def menu():
-    print("""
-    Seleccione una opcion para continuar:
-        1.Especifique el nombre de archivo para procesar su contenido 
-        incluyendo su extensión (Ej: archivo.txt) 
-        2. Salir del programa
-        """)
-    
-    opcion = int(input('\nCuál opcion desea realizar?\n'))
-    lectura(opcion)
+menuItems = np.array(["Procesar Archivo", "Salir"])
+while True:
+    eleccion = menu(menuItems);
+    if eleccion == 1:
+        archivo = input("Escriba el nombre del archivo: ")
+        lectura(archivo)    
+    elif eleccion == 2:
+        break
     
 """Se creo la función lectura a la cual se le pasa el parametro de la
 opcion elegida. Si es 1 procede a la lectura del #archivo y si es 2 se
@@ -76,7 +74,11 @@ def resultados(nombre_archivo):
             .format(numero_lineas)) 
             
             #Numero de palabras unicas que hay en el archivo 
-            
+            arrayPalabras = np.array(numero_palabras)            
+            palabras_unicas, conteo_unicas = np.unique(arrayPalabras, 
+            return_counts=True)
+            print('Hay {} nombres unicos en el archivo de texto.'
+            .format(np.asarray(len(palabras_unicas))))
 
             #Tiempo de ejecución programa
             print('Duracion: {} segundos'.format(time.time() - inicio))  
