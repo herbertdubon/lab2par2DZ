@@ -61,7 +61,8 @@ def resultados(nombre_archivo):
         #nombre de extensión y otros.         
         with open(nombre_archivo) as nombre_archivo: 
             contenido = nombre_archivo.read() 
-            
+            print("""El nombre_archivo ingresado se ha podido leer \
+satisfactoriamente.\n""")
             #Numero de caracteres que hay en el archivo ingresado
             numero_caracteres = len(contenido)
             print('Hay {} caracteres en el archivo de texto.'

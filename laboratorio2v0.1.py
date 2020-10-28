@@ -7,8 +7,10 @@ import time as time
 def salir():
     sys.exit()
 
-#Se creo la función de menu con las opciones que el usuario puede elegir. Al final se le envia la opcion elegida 
-# a la función lectura. El programa soporta la lectura de archivos json, txt, sin nombre de extensión y otros.  
+#Se creo la función de menu con las opciones que el usuario puede elegir. 
+# Al final se le envia la opcion elegida a la función lectura. El 
+# programa soporta la lectura de archivos json, txt, sin nombre de 
+# extensión y otros.  
 def menu():
     print("""
     Seleccione una opcion para continuar:
@@ -18,8 +20,10 @@ def menu():
     opcion = int(input('\nCuál opcion desea realizar?\n'))
     lectura(opcion)
     
-#Se creo la función lectura a la cual se le pasa el parametro de la opcion elegida. Si es 1 procede a la lectura del
-#archivo y si es 2 se sale del programa. A la función resultados se le pasa el parametro del nombre_archivo digitado por el usuario. 
+#Se creo la función lectura a la cual se le pasa el parametro de la 
+#opcion elegida. Si es 1 procede a la lectura del #archivo y si es 2 se
+#sale del programa. A la función resultados se le pasa el parametro del 
+# nombre_archivo digitado por el usuario. 
 def lectura(opcion):
     try:
         while True:
@@ -45,12 +49,14 @@ def lectura(opcion):
         elif (opcion == "n"):
             salir()
 
-#Se crea la fución resultados a la cual se le pasa el parametro del nombre del archivo y se procesan los 4 resultados solicitados.
+#Se crea la fución resultados a la cual se le pasa el parametro del 
+#nombre del archivo y se procesan los 4 resultados solicitados.
 def resultados(nombre_archivo):
     while True:                   
         with open(nombre_archivo) as nombre_archivo:  
             inicio = time.time()            
-            #La variable contenido hace referencia a la información dentro del archivo de texto.
+            #La variable contenido hace referencia a la información 
+            # dentro del archivo de texto.
             contenido = nombre_archivo.read()
             print('El nombre_archivo ingresado se ha podido leer satisfactoriamente.\n')
             
